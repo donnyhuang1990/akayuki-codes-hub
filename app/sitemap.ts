@@ -1,0 +1,2 @@
+import type { MetadataRoute } from 'next'; import { SITE_URL } from '@/lib/site';
+export default function sitemap(): MetadataRoute.Sitemap { const routes = ['', '/codes/', '/code-checker/', '/guides/', '/guides/how-to-redeem/', '/guides/beginner-guide/', '/about/', '/contact/', '/privacy/']; return routes.map((route) => ({ url: `${SITE_URL}${route}`, lastModified: new Date('2026-11-14'), changeFrequency: route === '/codes/' ? 'daily' : 'monthly', priority: route === '' ? 1 : route === '/codes/' ? 0.9 : 0.7 })); }
