@@ -1,3 +1,98 @@
-import type { Metadata } from 'next'; import Link from 'next/link';
-export const metadata: Metadata = { title: 'How to Redeem Akayuki Codes', description: 'Learn how to redeem codes in AKAYUKI: Steel Blossoms Red and troubleshoot common code errors.', alternates: { canonical: '/guides/how-to-redeem/' } };
-export default function RedeemGuide(){return <article className="container article-wrap"><div className="eyebrow">GUIDE · REDEMPTION</div><h1 className="page-title">How to Redeem <span>Akayuki Codes.</span></h1><p className="page-intro">Use this general walkthrough to find the redemption interface and understand common error messages in AKAYUKI: Steel Blossoms Red.</p><div className="article-meta">Akayuki Codes Editorial Team · Updated November 14, 2026 · 3 min read</div><div className="article-body"><div className="notice"><strong>Before you start</strong><p>Roblox game interfaces can change. The steps below are a general guide; follow the current in-game labels if they differ.</p></div><h2>1. Open the correct Roblox experience</h2><p>Launch <em>AKAYUKI: Steel Blossoms Red</em> from its official Roblox experience page. Confirm that you are in the intended game rather than another experience with a similar name.</p><h2>2. Look for the Codes option</h2><p>Once the game has loaded, inspect the main menu and available in-game menus for a button labelled “Codes” or a similar redemption option. The exact location may change with updates.</p><h2>3. Enter the code exactly</h2><p>Copy the code from the <Link href="/codes/">Akayuki codes database</Link> and paste it into the redemption field. Preserve all punctuation, underscores, and numbers. Avoid adding spaces before or after the code.</p><h2>4. Submit and read the response</h2><p>Use the in-game redeem or submit control. If the game accepts the code, check the relevant inventory or currency balance for the reward. If it rejects the code, read the message carefully.</p><h2>Why might a code fail?</h2><ul><li><strong>Expired:</strong> The promotion may no longer be available.</li><li><strong>Already redeemed:</strong> Some codes can only be used once per account.</li><li><strong>Typing error:</strong> Check symbols, capitalization, and spaces.</li><li><strong>Wrong experience:</strong> Make sure you launched the correct Roblox game.</li><li><strong>Unverified listing:</strong> A code on a third-party website may never have worked or may be outdated.</li></ul><h2>Can a website verify my account's code status?</h2><p>Not through a normal public lookup. Our <Link href="/code-checker/">Code Checker</Link> searches our own published records. It does not connect to Roblox, inspect your account, or confirm redemption eligibility.</p><div className="article-cta"><strong>Ready to look up a code?</strong><p>Browse the current database and review each entry's status before trying it in-game.</p><Link className="button" href="/codes/">Browse codes →</Link></div></div></article>}
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import { ROBLOX_GAME_URL } from '@/lib/site';
+
+export const metadata: Metadata = {
+  title: 'How to Redeem Akayuki Codes – Step-by-Step Guide',
+  description: 'Find the in-game Codes menu in AKAYUKI: Steel Blossoms Red, enter a code carefully, and troubleshoot common redemption errors.',
+  alternates: { canonical: '/guides/how-to-redeem/' },
+};
+
+export default function RedeemGuide() {
+  return (
+    <article className="container article-wrap">
+      <div className="eyebrow">GUIDE · REDEMPTION</div>
+      <h1 className="page-title">How to Redeem <span>Akayuki Codes.</span></h1>
+      <p className="page-intro">
+        A practical walkthrough for finding the in-game code panel, entering a
+        code carefully, and understanding why a redemption may fail.
+      </p>
+      <div className="article-meta">Akayuki Codes Editorial Team · Updated November 14, 2026 · 5 min read</div>
+      <div className="article-body">
+        <div className="notice">
+          <strong>Before you start</strong>
+          <p>
+            This walkthrough combines the public Roblox experience listing
+            with instructions reported by third-party game guides. We have not
+            independently recorded a successful redemption in-game. Menu
+            placement can change after updates, so use the labels shown by
+            your current game client.
+          </p>
+          <p><a href={ROBLOX_GAME_URL} target="_blank" rel="noreferrer">Open AKAYUKI: Steel Blossoms Red on Roblox ↗</a></p>
+        </div>
+
+        <h2>1. Launch the correct Roblox experience</h2>
+        <p>
+          Open <em>AKAYUKI: Steel Blossoms Red</em> by @spidermanguy999. Check
+          the title and creator so you do not enter a different experience
+          with a similar name.
+        </p>
+
+        <h2>2. Find the in-game Codes panel</h2>
+        <p>
+          Published walkthroughs describe a Codes option on the main menu.
+          If you are already in the game, another guide reports that the M key
+          opens a menu containing Codes on desktop. These descriptions may
+          reflect different interface states or game versions; if neither
+          matches your screen, inspect the current menus and tutorial rather
+          than assuming the option is in a fixed location.
+        </p>
+
+        <h2>3. Copy the exact code from the database</h2>
+        <p>
+          Open the <Link href="/codes/">Akayuki codes database</Link> and copy
+          the exact code string. Preserve capital letters, punctuation,
+          underscores, and numbers. Do not copy the reward description or add
+          spaces before or after the code.
+        </p>
+
+        <h2>4. Submit it in the game</h2>
+        <p>
+          Paste the code into the in-game code field and use the Redeem or
+          equivalent button shown by the game. Read the response message
+          carefully. If the game accepts the code, check the relevant reward
+          or inventory area to see what was added.
+        </p>
+        <p>
+          Use the in-experience code panel. The Roblox website's
+          <a href="https://www.roblox.com/redeem" target="_blank" rel="noreferrer"> gift-card redemption page</a>
+          is a separate service and is not the game's code panel.
+        </p>
+
+        <h2>Why might a code fail?</h2>
+        <ul>
+          <li><strong>Typing or copy error:</strong> Check every character, symbol, and extra space.</li>
+          <li><strong>Already redeemed:</strong> The code may have been claimed previously on your account.</li>
+          <li><strong>Expired or disabled:</strong> The developer may have ended the promotion.</li>
+          <li><strong>Wrong experience:</strong> Confirm that you launched AKAYUKI: Steel Blossoms Red.</li>
+          <li><strong>Unverified listing:</strong> A third-party page may list a string that has not been confirmed.</li>
+          <li><strong>Temporary issue:</strong> Rejoin the experience and try again if the game appears to be having a temporary problem.</li>
+        </ul>
+
+        <h2>Can this website check whether a code works on my account?</h2>
+        <p>
+          No. Our <Link href="/code-checker/">Code Checker</Link> searches
+          our own published records. It cannot connect to Roblox, inspect
+          your account, or confirm whether you have already redeemed a code.
+          The in-game response is the final confirmation.
+        </p>
+
+        <div className="article-cta">
+          <strong>Look up a code</strong>
+          <p>Review its current label and verification notes before trying it in-game.</p>
+          <Link className="button" href="/codes/">Browse Akayuki codes →</Link>
+        </div>
+      </div>
+    </article>
+  );
+}
