@@ -19,6 +19,13 @@ npm run build
 npm start
 ```
 
+## Deploy to Netlify
+1. Import this repository into Netlify.
+2. Keep the repository root as the base directory. The included `netlify.toml` sets the build command to `npm run build` and the publish directory to `.next`.
+3. Netlify automatically detects Next.js and configures its runtime to serve pages, assets, and metadata routes. Do not publish the repository root or add a catch-all rewrite to `index.html`.
+4. After deployment, verify `/`, `/codes/`, `/code-checker/`, `/guides/`, `/robots.txt`, and `/sitemap.xml`.
+5. To use `akayuki.codes`, add it under domain management and follow Netlify's DNS instructions.
+
 ## Deploy to Vercel
 1. Create a Git repository and push this project.
 2. Import the repository into Vercel.
