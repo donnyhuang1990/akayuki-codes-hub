@@ -16,13 +16,14 @@ Open http://localhost:3000.
 ## Production build
 ```bash
 npm run build
-npm start
 ```
+
+This creates the deployable static site in `out/`, including `index.html`, page directories, and assets. The code search and checker run in the browser. Preview the export with a static file server; `next start` does not serve static exports.
 
 ## Deploy to Netlify
 1. Import this repository into Netlify.
-2. Keep the repository root as the base directory. The included `netlify.toml` sets the build command to `npm run build` and the publish directory to `.next`.
-3. Netlify automatically detects Next.js and configures its runtime to serve pages, assets, and metadata routes. Do not publish the repository root or add a catch-all rewrite to `index.html`.
+2. Keep the repository root as the base directory. The included `netlify.toml` sets the build command to `npm run build` and the publish directory to `out`.
+3. Next.js exports the pages, assets, robots file, and sitemap as static files. Netlify serves `out/index.html` at `/` and each exported page at its own URL without a server runtime. Do not publish `.next` or the repository root, or add a catch-all rewrite to `index.html`.
 4. After deployment, verify `/`, `/codes/`, `/code-checker/`, `/guides/`, `/robots.txt`, and `/sitemap.xml`.
 5. To use `akayuki.codes`, add it under domain management and follow Netlify's DNS instructions.
 
