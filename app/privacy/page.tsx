@@ -43,22 +43,34 @@ export default function Privacy() {
 
         <h2>Cookies, analytics, and advertising</h2>
         <p>
-          At the time this policy was updated, the website code does not
-          intentionally include Google Analytics or Google AdSense tags. We do
-          not currently use those tools on the basis of this policy. Hosting or
-          security infrastructure may use technically necessary mechanisms to
-          operate and protect the site.
+          This website has a Google Tag Manager container installed. We use Google
+          Analytics 4 through that container to understand website usage, such as
+          pages viewed, interactions, referring sources, browser and device
+          information, and approximate location. Google may use cookies or
+          similar technologies to provide analytics. Information collected
+          through Google Analytics is processed by Google on our behalf and is
+          subject to Google's terms and privacy policy.
         </p>
         <p>
-          If analytics, advertising, or other third-party tracking technologies
-          are introduced, we will update this policy to explain the relevant
-          providers, data uses, and available choices, and provide any notices or
-          consent controls required by applicable law before or when those
-          technologies are used.
+          Google Analytics settings and available controls may affect what
+          information is collected. You can review Google's information about
+          how it uses data from sites that use its services and its privacy
+          controls. You can also manage cookies through your browser settings.
+          Depending on your location and applicable law, additional notice or
+          consent choices may apply. We will provide appropriate controls where
+          required.
+        </p>
+        <p>
+          We do not currently intentionally include Google AdSense advertising
+          tags. If advertising or other tracking technologies are introduced, we
+          will update this policy to explain the relevant providers, data uses,
+          and available choices.
         </p>
 
         <h2>How we use information</h2>
         <p>
+          Analytics information may be used to understand traffic, measure page
+          performance, improve navigation and content, and maintain the website.
           Information sent to our contact address may be used to respond to your
           message, review code corrections, improve website content, and protect
           the website from abuse. We do not sell the contents of messages sent to
@@ -76,8 +88,10 @@ export default function Privacy() {
         <p>
           We keep correspondence for as long as reasonably needed to handle the
           request, maintain relevant records, or meet applicable obligations.
-          No method of internet transmission or electronic storage is completely
-          secure, so we cannot guarantee absolute security.
+          Analytics retention is subject to the settings configured in Google
+          Analytics and Google's applicable policies. No method of internet
+          transmission or electronic storage is completely secure, so we cannot
+          guarantee absolute security.
         </p>
 
         <h2>Children's privacy</h2>
