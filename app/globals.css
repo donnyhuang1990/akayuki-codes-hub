@@ -101,3 +101,24 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .codes-next-step strong{font-family:'Space Grotesk',sans-serif;font-size:18px;color:#f1e5e7}
 .codes-next-step p{margin:7px 0 10px}
 @media(max-width:700px){.codes-summary{grid-template-columns:repeat(2,minmax(0,1fr))}.codes-howto{align-items:flex-start;flex-direction:column;padding:18px}.code-tool-heading{align-items:flex-start;flex-direction:column;gap:5px}.code-result-count{white-space:normal}.empty-state-actions{align-items:flex-start;flex-direction:column}}
+
+
+/* Code Checker usability improvements */
+.checker-explainer{padding:17px 19px;margin:22px 0;background:#21191d;border:1px solid #493038;border-left:3px solid var(--red);border-radius:8px}
+.checker-explainer strong,.checker-next-steps strong{font-family:'Space Grotesk',sans-serif;font-size:16px;color:#f1e5e7}
+.checker-explainer p,.checker-next-steps p{font-size:14px;line-height:1.8;color:#c8bdc1;margin:5px 0 0}
+.checker-card{margin-top:18px}
+.checker-form label{font-size:16px}
+.checker-input-help{font-size:12px;color:#bcb3b8;line-height:1.65;margin:9px 0 0}
+.checker-result{padding-top:22px}
+.checker-result h3{overflow-wrap:anywhere}
+.checker-result strong{color:#eee4e5}
+.checker-result .text-link{display:inline-block;margin-top:7px}
+.checker-sources{margin:15px 0;padding:13px 15px;background:#19171a;border:1px solid #302a2e;border-radius:7px}
+.checker-sources>strong{font-size:13px}
+.checker-sources ul{display:flex;flex-wrap:wrap;gap:8px 18px;list-style:none;padding:0;margin:8px 0 0}
+.checker-sources li,.checker-sources a{font-size:13px;color:var(--red2)}
+.checker-next-steps{display:flex;align-items:center;justify-content:space-between;gap:22px;margin-top:22px;padding:20px;background:#21191d;border:1px solid #493038;border-radius:9px}
+.checker-next-links{display:flex;align-items:center;gap:13px;flex-wrap:wrap;flex-shrink:0}
+.checker-next-links .button{white-space:nowrap}
+@media(max-width:700px){.checker-next-steps{align-items:flex-start;flex-direction:column;padding:17px}.checker-next-links{align-items:flex-start;flex-direction:column}.checker-input-help{font-size:12px}}
