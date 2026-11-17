@@ -88,10 +88,14 @@ export default function RedeemGuide() {
         </p>
 
         <div className="article-cta">
-          <strong>Look up a code</strong>
-          <p>Review its current label and verification notes before trying it in-game.</p>
-          <Link className="button" href="/codes/">Browse Akayuki codes →</Link>
+          <strong>Find and check a code</strong>
+          <p>Review reported status and source notes in the database, or check whether an exact code has an entry on this site.</p>
+          <div className="article-cta-links">
+            <Link className="button" href="/codes/">Browse Akayuki codes →</Link>
+            <Link className="text-link" href="/code-checker/">Open Code Checker</Link>
+          </div>
         </div>
+        <p className="article-related">Related: <Link href="/guides/beginner-guide/">Akayuki Beginner Guide</Link> · <Link href="/guides/">All player guides</Link></p>
       </div>
     </article>
   );
