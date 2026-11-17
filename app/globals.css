@@ -79,3 +79,25 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .featured-code-footer a{color:var(--red2);font-weight:700;white-space:nowrap}
 .featured-code-date{font-size:11px;color:#898288;margin:12px 0 0}
 @media(max-width:640px){.featured-code-grid{grid-template-columns:1fr}.featured-code-card{padding:17px}.featured-code-footer{align-items:flex-start;flex-direction:column}.featured-code-top code{font-size:14px}}
+
+
+/* Codes database page improvements */
+.codes-summary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:26px 0 22px}
+.codes-summary>div{padding:17px 18px;background:#1b181b;border:1px solid #383036;border-radius:8px;display:flex;flex-direction:column;gap:3px}
+.codes-summary strong{font-family:'Space Grotesk',sans-serif;font-size:25px;line-height:1.2;color:#f4e8e9}
+.codes-summary span{font-size:12px;color:#bdb2b8}
+.codes-howto{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 22px;margin:24px 0 26px;background:#21191d;border:1px solid #493038;border-radius:9px}
+.codes-howto h2,.code-tool-heading h2{font-family:'Space Grotesk',sans-serif;font-size:20px;margin:0 0 5px}
+.codes-howto p,.code-tool-heading p{font-size:13px;line-height:1.7;color:#c4b9be;margin:0;max-width:690px}
+.codes-howto .button{white-space:nowrap}
+.code-tool-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:15px;margin:0 0 14px}
+.code-result-count{font-size:12px;color:#c2b7bd;white-space:nowrap}
+.code-tool .tool-controls{margin-bottom:14px}
+.code-tool .tool-controls input{min-width:0}
+.code-tool .tool-controls button{white-space:nowrap}
+.empty-state-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:15px}
+.codes-reference{margin-top:38px}
+.codes-next-step{margin-top:24px;padding:20px;background:#21191d;border:1px solid #493038;border-radius:9px}
+.codes-next-step strong{font-family:'Space Grotesk',sans-serif;font-size:18px;color:#f1e5e7}
+.codes-next-step p{margin:7px 0 10px}
+@media(max-width:700px){.codes-summary{grid-template-columns:repeat(2,minmax(0,1fr))}.codes-howto{align-items:flex-start;flex-direction:column;padding:18px}.code-tool-heading{align-items:flex-start;flex-direction:column;gap:5px}.code-result-count{white-space:normal}.empty-state-actions{align-items:flex-start;flex-direction:column}}
