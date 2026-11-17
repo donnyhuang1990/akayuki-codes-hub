@@ -106,10 +106,14 @@ export default function BeginnerGuide() {
         </p>
 
         <div className="article-cta">
-          <strong>Ready to redeem a code?</strong>
-          <p>Follow the redemption walkthrough and check the code's status first.</p>
-          <Link className="button" href="/guides/how-to-redeem/">Read the redemption guide →</Link>
+          <strong>Ready to use a promotional code?</strong>
+          <p>Find a listed code, review its source notes, and follow the redemption walkthrough.</p>
+          <div className="article-cta-links">
+            <Link className="button" href="/codes/">Browse Akayuki codes →</Link>
+            <Link className="text-link" href="/guides/how-to-redeem/">Read the redemption guide</Link>
+          </div>
         </div>
+        <p className="article-related">Related: <Link href="/code-checker/">Akayuki Code Checker</Link> · <Link href="/guides/">All player guides</Link></p>
       </div>
     </article>
   );
