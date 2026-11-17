@@ -16,17 +16,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/privacy/',
   ];
 
-  // The homepage, code list, and checker reflect the code database,
-  // which was last reviewed on November 15, 2026.
-  const codeDataLastModified = new Date('2026-11-15T00:00:00.000Z');
-  const editorialLastModified = new Date('2026-11-14T00:00:00.000Z');
+  // Reflect actual page-content updates, not code verification dates.
+  const refreshedPageDate = new Date('2026-11-17T00:00:00.000Z');
+  const existingEditorialDate = new Date('2026-11-14T00:00:00.000Z');
 
   return routes.map((route) => {
-    const includesCodeData = route === '' || route === '/codes/' || route === '/code-checker/';
+    const refreshed = [
+      '',
+      '/codes/',
+      '/code-checker/',
+      '/guides/',
+      '/guides/how-to-redeem/',
+      '/guides/beginner-guide/',
+    ].includes(route);
 
     return {
       url: `${SITE_URL}${route}`,
-      lastModified: includesCodeData ? codeDataLastModified : editorialLastModified,
+      lastModified: refreshed ? refreshedPageDate : existingEditorialDate,
       changeFrequency: route === '/codes/' ? 'daily' : 'monthly',
       priority: route === '' ? 1 : route === '/codes/' ? 0.9 : 0.7,
     };
