@@ -134,3 +134,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .article-related{margin-top:22px;padding-top:14px;border-top:1px solid #3b3237;font-size:13px;color:#c4b9be}
 .article-related a{color:var(--red2);text-decoration:underline;text-underline-offset:3px}
 @media(max-width:700px){.guides-tools-panel{align-items:flex-start;flex-direction:column;padding:17px}.guides-tools-links,.article-cta-links{align-items:flex-start;flex-direction:column}}
+
+/* Codes page FAQ and content hierarchy */
+.codes-section-heading{display:flex;align-items:end;justify-content:space-between;gap:18px;margin:34px 0 14px}
+.codes-section-heading h2{font-family:'Space Grotesk',sans-serif;font-size:30px;line-height:1.2;margin:7px 0 0}
+.codes-section-heading>p{font-size:12px;color:#c0b8bd;margin:0 0 3px}
+.codes-faq{margin-top:48px}
+.codes-faq-item{border-bottom:1px solid var(--line);padding:17px 0}
+.codes-faq-item:first-of-type{border-top:1px solid var(--line)}
+.codes-faq-item summary{cursor:pointer;color:#f0e9e6;font-family:'Space Grotesk',sans-serif;font-size:17px;font-weight:600;line-height:1.5}
+.codes-faq-item summary::marker{color:var(--red2)}
+.codes-faq-item p{margin:10px 0 0;max-width:780px}
+.codes-bottom-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:34px}
+.codes-bottom-links>div{padding:20px;background:#19171a;border:1px solid #302a2e;border-radius:9px}
+.codes-bottom-links strong{font-family:'Space Grotesk',sans-serif;font-size:17px;color:#f1e5e7}
+.codes-bottom-links p{font-size:14px;line-height:1.75;color:#c0b8bd;margin:7px 0 12px}
+@media(max-width:700px){.codes-section-heading{align-items:flex-start;flex-direction:column;gap:7px}.codes-section-heading h2{font-size:26px}.codes-bottom-links{grid-template-columns:1fr}.codes-faq-item summary{font-size:16px}}
