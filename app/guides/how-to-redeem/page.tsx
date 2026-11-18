@@ -14,8 +14,7 @@ export default function RedeemGuide() {
       <div className="eyebrow">GUIDE · REDEMPTION</div>
       <h1 className="page-title">How to Redeem <span>Akayuki Codes.</span></h1>
       <p className="page-intro">
-        A practical walkthrough for finding the in-game code panel, entering a
-        code carefully, and understanding why a redemption may fail.
+        Follow the reported in-game redemption steps, copy codes without changing any characters, and troubleshoot common errors. Menu labels may differ between game versions.
       </p>
       <div className="article-meta">Akayuki Codes Editorial Team · Updated November 14, 2026 · 5 min read</div>
       <div className="article-body">
@@ -69,6 +68,14 @@ export default function RedeemGuide() {
           is a separate service and is not the game's code panel.
         </p>
 
+        <h2>What to check before trying a code</h2>
+        <p>
+          Look at the code's source-check date and reported status in our
+          <Link href="/codes/"> code database</Link>. A recently checked source
+          is not proof that the code still works, and a reported-active label
+          is not an in-game verification. If sources disagree, read the source
+          note before trying the code.
+        </p>
         <h2>Why might a code fail?</h2>
         <ul>
           <li><strong>Typing or copy error:</strong> Check every character, symbol, and extra space.</li>
@@ -78,6 +85,15 @@ export default function RedeemGuide() {
           <li><strong>Unverified listing:</strong> A third-party page may list a string that has not been confirmed.</li>
           <li><strong>Temporary issue:</strong> Rejoin the experience and try again if the game appears to be having a temporary problem.</li>
         </ul>
+
+        <h2>What should I do if the menu looks different?</h2>
+        <p>
+          Start from the game's current main menu and look for a Codes or
+          redemption option. If the published instructions no longer match,
+          avoid repeatedly entering the code into unrelated Roblox forms.
+          You can <Link href="/contact/">report an outdated step</Link> with
+          the menu labels you see, so we can review the guide.
+        </p>
 
         <h2>Can this website check whether a code works on my account?</h2>
         <p>
