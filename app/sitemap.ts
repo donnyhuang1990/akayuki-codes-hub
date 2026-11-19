@@ -35,9 +35,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     return {
       url: `${SITE_URL}${route}`,
-      lastModified: route === '/guides/family-names/' ? familyGuideDate : refreshed ? refreshedPageDate : existingEditorialDate,
-      changeFrequency: route === '/codes/' ? 'daily' : 'monthly',
-      priority: route === '' ? 1 : route === '/codes/' ? 0.9 : 0.7,
+      lastModified: route === '/ko/akayuki-codes/' ? new Date('2026-11-19T00:00:00.000Z') : route === '/guides/family-names/' ? familyGuideDate : refreshed ? refreshedPageDate : existingEditorialDate,
+      changeFrequency: route === '/codes/' ? 'daily' : route === '/ko/akayuki-codes/' ? 'weekly' : 'monthly',
+      priority: route === '' ? 1 : route === '/codes/' ? 0.9 : route === '/ko/akayuki-codes/' ? 0.85 : 0.7,
     };
   });
 }
