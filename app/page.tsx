@@ -24,11 +24,8 @@ export default function Home() {
             </div>
             <div className="hero-proof"><span>✦ Community-focused</span><span>✦ Clear status labels</span><span>✦ Free to use</span></div>
           </div>
-          <div className="hero-art" aria-label="Abstract red blossom and katana-inspired artwork">
-            <div className="art-orbit orbit-one" /><div className="art-orbit orbit-two" /><div className="moon" />
-            <div className="blade blade-one" /><div className="blade blade-two" />
-            <div className="petal petal-one" /><div className="petal petal-two" /><div className="petal petal-three" />
-            <div className="art-caption">STEEL<br />BLOSSOMS<br /><span>RED</span></div>
+          <div className="hero-art hero-art-game" role="img" aria-label="Stylized blocky Roblox-inspired swordsman holding a katana in a snowy mountain valley">
+            <div className="hero-art-label">AKAYUKI: STEEL BLOSSOMS RED</div>
           </div>
         </div>
       </section>
