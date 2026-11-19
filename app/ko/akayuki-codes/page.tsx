@@ -40,7 +40,15 @@ const rewardKo: Record<string, string> = {
   'HAPPYWEEKEND2': '과거 보상 제보: 게임 내 재화 2,000 + 이름 변경 스핀 200개 + XP 2,000 + 2일간 XP 2배',
 };
 
-const sourceNoteKo: Record<string, string> = {\n  'R0NIN!TIDE_5K': '2026년 11월 19일 출처 확인: Destructoid와 GachaPocket은 사용 가능으로 표시하지만 Roblox Den은 확인 필요로 표시합니다. 출처 간 상태가 달라 확인 필요로 분류했습니다.',\n  'BLOSSOMVEIL_4K': '2026년 11월 19일 출처 확인: Destructoid와 GachaPocket은 사용 가능으로 표시하지만 Roblox Den은 확인 필요로 표시합니다. 출처 간 상태가 달라 확인 필요로 분류했습니다.',\n  'Jolly3k___': '2026년 11월 19일 출처 확인: Destructoid와 GachaPocket은 사용 가능으로 표시하지만 Roblox Den은 확인 필요로 표시합니다. 출처 간 상태가 달라 확인 필요로 분류했습니다.',\n  'THANKYOU1K': '2026년 11월 19일 출처 확인: Roblox Den과 GachaPocket은 사용 가능으로 표시하지만 Destructoid 목록에는 없습니다. 보상과 상태를 게임에서 직접 테스트하지 않았습니다.',\n  'AKAYUKITHANKYOU': '2026년 11월 19일 출처 확인: Roblox Den과 Destructoid는 사용 가능으로 표시합니다. XP 보상은 출처별 설명이 다르므로 게임 내 결과를 확인하세요.',\n};\n\nconst statusKo = {
+const sourceNoteKo: Record<string, string> = {
+  'R0NIN!TIDE_5K': '2026년 11월 19일 출처 확인: Destructoid와 GachaPocket은 사용 가능으로 표시하지만 Roblox Den은 확인 필요로 표시합니다. 출처 간 상태가 달라 확인 필요로 분류했습니다.',
+  'BLOSSOMVEIL_4K': '2026년 11월 19일 출처 확인: Destructoid와 GachaPocket은 사용 가능으로 표시하지만 Roblox Den은 확인 필요로 표시합니다. 출처 간 상태가 달라 확인 필요로 분류했습니다.',
+  'Jolly3k___': '2026년 11월 19일 출처 확인: Destructoid와 GachaPocket은 사용 가능으로 표시하지만 Roblox Den은 확인 필요로 표시합니다. 출처 간 상태가 달라 확인 필요로 분류했습니다.',
+  'THANKYOU1K': '2026년 11월 19일 출처 확인: Roblox Den과 GachaPocket은 사용 가능으로 표시하지만 Destructoid 목록에는 없습니다. 보상과 상태를 게임에서 직접 테스트하지 않았습니다.',
+  'AKAYUKITHANKYOU': '2026년 11월 19일 출처 확인: Roblox Den과 Destructoid는 사용 가능으로 표시합니다. XP 보상은 출처별 설명이 다르므로 게임 내 결과를 확인하세요.',
+};
+
+const statusKo = {
   'reported-active': { label: '제보상 사용 가능', className: 'ko-status-active' },
   unverified: { label: '확인 필요', className: 'ko-status-review' },
   'reported-expired': { label: '제보상 만료', className: 'ko-status-expired' },
