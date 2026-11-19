@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   },
   description:
     'Browse AKAYUKI: Steel Blossoms Red codes, compare reported rewards and status sources, and copy codes to try in-game. Includes source notes and review dates.',
-  alternates: { canonical: '/codes/' },
+  alternates: { canonical: '/codes/', languages: { en: '/codes/', ko: '/ko/akayuki-codes/', 'x-default': '/codes/' } },
 };
 
 const faqs = [
