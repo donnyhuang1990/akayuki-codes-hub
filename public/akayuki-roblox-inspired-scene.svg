@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+<title id="title">Roblox-inspired snowy sword-fighter illustration</title><desc id="desc">A blocky game avatar holding a katana in a snowy mountain valley, with red banners and dark pine trees.</desc>
+<defs>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#c6d8ed"/><stop offset=".56" stop-color="#e9f0f6"/><stop offset="1" stop-color="#a9bfd5"/></linearGradient>
+ <linearGradient id="coat" x2="1" y2="1"><stop stop-color="#343b48"/><stop offset="1" stop-color="#111820"/></linearGradient>
+ <linearGradient id="blade" x2="0" y2="1"><stop stop-color="#fff"/><stop offset=".5" stop-color="#a9b8c8"/><stop offset="1" stop-color="#f8fbff"/></linearGradient>
+ <linearGradient id="red" x2="0" y2="1"><stop stop-color="#e94c55"/><stop offset="1" stop-color="#9d202c"/></linearGradient>
+ <filter id="shadow"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<rect width="1200" height="620" fill="url(#sky)"/>
+<circle cx="930" cy="115" r="72" fill="#fff" opacity=".38"/>
+<path d="M0 360 170 130 300 290 445 95 650 345 820 145 1030 360 1140 210 1200 300V620H0Z" fill="#839db8" opacity=".72"/>
+<path d="m85 250 85-120 72 105-44-18-29 31-29-24Z M350 205 445 95l110 144-69-35-42 24-36-27Z M745 255 820 145l110 135-57-32-31 22-33-27Z M1050 315l90-105 60 90-55-23-31 19Z" fill="#f8fbff"/>
+<path d="M0 400 175 300l155 100 185-145 180 160 180-125 170 115 155-95v310H0Z" fill="#d7e4ef"/>
+<path d="M0 470 210 400l160 78 180-80 170 90 185-80 150 72 145-63v203H0Z" fill="#edf3f8"/>
+<g fill="#263d4c"><path d="m45 430 30-100 30 100h-18v65H63v-65Z"/><path d="m115 460 24-83 25 83h-14v52h-22v-52Z"/><path d="m1015 430 31-105 31 105h-18v68h-26v-68Z"/><path d="m1100 460 25-85 26 85h-15v55h-22v-55Z"/></g>
+<ellipse cx="650" cy="548" rx="220" ry="32" fill="#50677d" opacity=".22" filter="url(#shadow)"/>
+<!-- red cloth banners -->
+<path d="M105 55h78v174l-39-22-39 22Z" fill="url(#red)"/><path d="M1015 35h95v205l-48-25-47 25Z" fill="url(#red)"/>
+<path d="M143 70v110 M1063 55v140" stroke="#f9c5c3" stroke-width="4" opacity=".75"/>
+<!-- blocky avatar -->
+<g transform="translate(500 105)">
+ <rect x="55" y="12" width="160" height="145" rx="9" fill="#202a36" stroke="#101720" stroke-width="8"/>
+ <path d="M65 45h140v28H65Z" fill="#303b4b"/>
+ <rect x="85" y="78" width="16" height="13" rx="2" fill="#dce8f3"/><rect x="168" y="78" width="16" height="13" rx="2" fill="#dce8f3"/>
+ <path d="M119 112h38" stroke="#9b5358" stroke-width="7" stroke-linecap="round"/>
+ <path d="M38 162h195l55 208H-8Z" fill="url(#coat)" stroke="#121922" stroke-width="9"/>
+ <path d="M112 165 150 245l-42 90-38-172Z" fill="#8f2733"/>
+ <path d="m151 245 42-80 23 173-66-15Z" fill="#a52f3a"/>
+ <path d="M30 185-36 295l34 22 90-98Z" fill="#222d39" stroke="#121922" stroke-width="8"/>
+ <path d="M214 184 282 270l-31 27-82-70Z" fill="#222d39" stroke="#121922" stroke-width="8"/>
+ <rect x="-40" y="292" width="48" height="42" rx="7" fill="#c98e71"/>
+ <rect x="244" y="276" width="48" height="42" rx="7" fill="#c98e71"/>
+ <path d="M20 367h91v145H20Z" fill="#222b37" stroke="#111923" stroke-width="8"/>
+ <path d="M134 367h91v145h-91Z" fill="#222b37" stroke="#111923" stroke-width="8"/>
+ <path d="M12 505h108v35H12Z M126 505h108v35H126Z" fill="#141b25"/>
+ <!-- katana and grip -->
+ <path d="M280 298 510 110" stroke="#a77a62" stroke-width="17" stroke-linecap="round"/>
+ <path d="m490 128 310-250" stroke="#5d6570" stroke-width="17" stroke-linecap="round"/>
+ <path d="m494 120 313-248" stroke="url(#blade)" stroke-width="10" stroke-linecap="round"/>
+ <path d="m475 141 38-30" stroke="#d4b18b" stroke-width="24" stroke-linecap="round"/>
+ <path d="m465 154 52-42" stroke="#1b2029" stroke-width="7" stroke-dasharray="8 8"/>
+</g>
+<path d="M0 570q160-40 300 0t300 0 300 0 300 0" fill="none" stroke="#fff" stroke-width="8" opacity=".65"/>
+</svg>
