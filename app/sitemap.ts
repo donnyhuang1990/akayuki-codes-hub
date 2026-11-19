@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/guides/',
     '/guides/how-to-redeem/',
     '/guides/beginner-guide/',
+    '/guides/family-names/',
     '/about/',
     '/contact/',
     '/privacy/',
@@ -18,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Reflect actual page-content updates, not code verification dates.
   const refreshedPageDate = new Date('2026-11-17T00:00:00.000Z');
+  const familyGuideDate = new Date('2026-11-19T00:00:00.000Z');
   const existingEditorialDate = new Date('2026-11-14T00:00:00.000Z');
 
   return routes.map((route) => {
@@ -32,7 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     return {
       url: `${SITE_URL}${route}`,
-      lastModified: refreshed ? refreshedPageDate : existingEditorialDate,
+      lastModified: route === '/guides/family-names/' ? familyGuideDate : refreshed ? refreshedPageDate : existingEditorialDate,
       changeFrequency: route === '/codes/' ? 'daily' : 'monthly',
       priority: route === '' ? 1 : route === '/codes/' ? 0.9 : 0.7,
     };

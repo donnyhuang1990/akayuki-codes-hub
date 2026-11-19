@@ -84,6 +84,8 @@ export default function BeginnerGuide() {
           choice for every build.
         </p>
 
+        <p>For family-name reroll steps and how to compare bonuses, read our <Link href="/guides/family-names/">Akayuki Family Names Guide</Link>.</p>
+
         <h2>5. Use promotional codes with care</h2>
         <p>
           Code lists on third-party websites can be outdated, incomplete, or

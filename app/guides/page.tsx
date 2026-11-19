@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 const guides = [
   { href: '/guides/how-to-redeem/', n: '01', title: 'How to Redeem Akayuki Codes', desc: 'Find the in-game Codes menu, enter a code carefully, and understand common redemption errors.', tag: 'REDEMPTION' },
   { href: '/guides/beginner-guide/', n: '02', title: 'Akayuki Beginner Guide', desc: 'Learn the basic progression loop, blade upgrades, and family-name system using available game information.', tag: 'GETTING STARTED' },
+  { href: '/guides/family-names/', n: '03', title: 'Akayuki Family Names & Reroll Guide', desc: 'Learn where to roll names, how to read buffs, and what is known about the best family names.', tag: 'FAMILY NAMES' },
 ];
 
 export default function GuidesPage() {
