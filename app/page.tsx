@@ -17,7 +17,7 @@ export default function Home() {
           <div className="hero-copy">
             <div className="eyebrow"><span className="eyebrow-dot" /> INDEPENDENT PLAYER RESOURCE</div>
             <h1>AKAYUKI<br /><span>Codes & Guides.</span></h1>
-            <p className="hero-lead">Find code information, explore gameplay guides, and make your next session in <em>AKAYUKI: Steel Blossoms Red</em> count.</p>
+            <p className="hero-lead">Browse reported Akayuki codes with source-check dates, learn how redemption works, and explore gameplay guides for <em>AKAYUKI: Steel Blossoms Red</em>.</p>
             <div className="hero-actions">
               <Link className="button" href="/codes/">Explore codes <span>→</span></Link>
               <Link className="button button-ghost" href="/guides/">Browse guides</Link>
@@ -72,6 +72,19 @@ export default function Home() {
           <p className="micro-note dark-note">A reported active label does not guarantee redemption. The in-game response is the final confirmation.</p>
           <p className="featured-code-date">Latest source-check date among these entries: {lastSourceCheck}</p>
         </div>
+      </section>
+
+      <section className="container section">
+        <div className="section-heading">
+          <div><div className="eyebrow">BEFORE YOU REDEEM</div><h2>How to use these<br /><span>code reports.</span></h2></div>
+          <p>Code availability can change without notice. Our database summarizes published sources; it does not test codes on Roblox.</p>
+        </div>
+        <div className="feature-grid">
+          <div className="feature-card"><span className="feature-kicker">01 · REVIEW</span><h3>Check the report</h3><p>Read the listed reward, reported status, source links, and last source-check date. Conflicting reports are noted where known.</p></div>
+          <div className="feature-card"><span className="feature-kicker">02 · COPY</span><h3>Preserve every character</h3><p>Copy the full code, including capital letters, underscores, punctuation, and numbers. Avoid extra spaces.</p></div>
+          <div className="feature-card"><span className="feature-kicker">03 · CONFIRM</span><h3>Try it in the game</h3><p>Use the current in-game redemption interface. Only the game's response can confirm whether a code works for your account.</p></div>
+        </div>
+        <p className="micro-note">Need the full walkthrough? <Link href="/guides/how-to-redeem/">Read how to redeem Akayuki codes →</Link></p>
       </section>
 
       <section className="container section split-section">
