@@ -56,7 +56,6 @@ export default function Home() {
           <div className="approved-guide-grid">{guides.map((guide) => <Link href={guide.href} className="approved-guide-card" key={guide.href}><div className={guide.image} role="img" aria-label={guide.title} /><div className="approved-guide-copy"><strong>{guide.title}</strong><p>{guide.desc}</p><b>→</b></div></Link>)}</div>
         </section>
       </div>
-      <section className="approved-disclaimer"><div><strong>Independent fan-made resource</strong><p>This is an independent fan-made website for AKAYUKI: Steel Blossoms Red on Roblox. It is not affiliated with, endorsed by, or officially connected to the game's developers.</p></div><Link href={ROBLOX_GAME_URL} target="_blank" rel="noreferrer">Official Roblox experience ↗</Link></section>
     </>
   );
 }
