@@ -150,3 +150,23 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .codes-bottom-links strong{font-family:'Space Grotesk',sans-serif;font-size:17px;color:#f1e5e7}
 .codes-bottom-links p{font-size:14px;line-height:1.75;color:#c0b8bd;margin:7px 0 12px}
 @media(max-width:700px){.codes-section-heading{align-items:flex-start;flex-direction:column;gap:7px}.codes-section-heading h2{font-size:26px}.codes-bottom-links{grid-template-columns:1fr}.codes-faq-item summary{font-size:16px}}
+
+
+/* Roblox-inspired snowy game hero refresh */
+.hero{background:#dce7f1;color:#101820;border-bottom:1px solid #c8d5e1}
+.hero-grid{min-height:470px;grid-template-columns:.9fr 1.1fr;gap:26px;padding-top:38px;padding-bottom:38px}
+.hero .eyebrow{color:#a72d37}
+.hero .eyebrow-dot{background:#df3945;box-shadow:0 0 12px rgba(223,57,69,.35)}
+.hero h1{color:#111820;font-size:clamp(48px,6vw,72px)}
+.hero h1 span{color:#d93642}
+.hero-lead{color:#344454;max-width:540px}
+.hero-lead em{color:#192b3a;font-weight:700}
+.hero-proof{color:#536575}
+.hero-art-game{height:390px;max-width:none;justify-self:stretch;align-self:stretch;width:100%;border-radius:14px;background-image:linear-gradient(90deg,rgba(16,28,40,.08),rgba(16,28,40,0)),url('/akayuki-roblox-inspired-scene.svg');background-size:cover;background-position:center;border:1px solid rgba(25,46,65,.16);box-shadow:0 18px 45px rgba(28,48,68,.16);overflow:hidden}
+.hero-art-game:before{display:none}
+.hero-art-label{position:absolute;left:18px;bottom:16px;padding:7px 10px;border-radius:5px;background:rgba(15,25,35,.78);color:#fff;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.08em}
+.hero .button{background:#df3945;border-color:#df3945}
+.hero .button-ghost{background:rgba(255,255,255,.55);border-color:#9eafbd;color:#172432}
+.hero .button-ghost:hover{background:#fff}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr;min-height:auto}.hero-art-game{height:340px;max-width:100%;justify-self:stretch}}
+@media(max-width:600px){.hero-art-game{height:260px;border-radius:10px}.hero-grid{padding-top:42px}.hero h1{font-size:clamp(42px,11vw,54px)}.hero-lead{font-size:16px}}
