@@ -40,7 +40,7 @@ const rewardKo: Record<string, string> = {
   'HAPPYWEEKEND2': '과거 보상 제보: 게임 내 재화 2,000 + 이름 변경 스핀 200개 + XP 2,000 + 2일간 XP 2배',
 };
 
-const statusKo = {
+const sourceNoteKo: Record<string, string> = {\n  'R0NIN!TIDE_5K': '2026년 11월 19일 출처 확인: Destructoid와 GachaPocket은 사용 가능으로 표시하지만 Roblox Den은 확인 필요로 표시합니다. 출처 간 상태가 달라 확인 필요로 분류했습니다.',\n  'BLOSSOMVEIL_4K': '2026년 11월 19일 출처 확인: Destructoid와 GachaPocket은 사용 가능으로 표시하지만 Roblox Den은 확인 필요로 표시합니다. 출처 간 상태가 달라 확인 필요로 분류했습니다.',\n  'Jolly3k___': '2026년 11월 19일 출처 확인: Destructoid와 GachaPocket은 사용 가능으로 표시하지만 Roblox Den은 확인 필요로 표시합니다. 출처 간 상태가 달라 확인 필요로 분류했습니다.',\n  'THANKYOU1K': '2026년 11월 19일 출처 확인: Roblox Den과 GachaPocket은 사용 가능으로 표시하지만 Destructoid 목록에는 없습니다. 보상과 상태를 게임에서 직접 테스트하지 않았습니다.',\n  'AKAYUKITHANKYOU': '2026년 11월 19일 출처 확인: Roblox Den과 Destructoid는 사용 가능으로 표시합니다. XP 보상은 출처별 설명이 다르므로 게임 내 결과를 확인하세요.',\n};\n\nconst statusKo = {
   'reported-active': { label: '제보상 사용 가능', className: 'ko-status-active' },
   unverified: { label: '확인 필요', className: 'ko-status-review' },
   'reported-expired': { label: '제보상 만료', className: 'ko-status-expired' },
@@ -49,7 +49,7 @@ const statusKo = {
 const faqs = [
   {
     q: '아카유키 코드는 어디에 입력하나요?',
-    a: 'AKAYUKI: Steel Blossoms Red를 실행한 뒤 메인 메뉴의 CODES 버튼을 누르세요. ENTER CODE 입력란에 코드를 붙여 넣고 REDEEM을 선택하면 됩니다. 게임 화면이나 메뉴가 업데이트되면 버튼 위치가 달라질 수 있습니다.',
+    a: 'AKAYUKI: Steel Blossoms Red를 실행하고 메인 메뉴에서 Codes 옵션을 찾아보세요. 일부 외부 가이드는 데스크톱에서 M 키를 눌러 Codes가 포함된 메뉴를 열 수 있다고 설명합니다. 현재 게임 버전에 표시되는 안내와 메뉴 이름을 기준으로 코드를 입력하고 Redeem 또는 이에 해당하는 버튼을 선택하세요.',
   },
   {
     q: '코드가 작동하지 않는 이유는 무엇인가요?',
@@ -130,7 +130,7 @@ export default function KoreanAkayukiCodesPage() {
                   <span className={`ko-status ${status.className}`}>{status.label}</span>
                 </div>
                 <p className="ko-reward"><strong>보상:</strong> {rewardKo[item.code] ?? '보상 정보 확인 중'}</p>
-                <p className="ko-source-note">{item.sourceNote}</p>
+                <p className="ko-source-note">{sourceNoteKo[item.code] ?? (item.status === 'reported-active' ? '2026년 11월 19일 확인한 외부 출처에서 사용 가능으로 표시했습니다. 이 사이트는 게임 내 입력을 테스트하지 않았습니다.' : item.status === 'reported-expired' ? '2026년 11월 19일 확인한 외부 출처에서 만료로 표시했습니다. 이 사이트는 게임 내 입력 실패를 직접 확인하지 않았습니다.' : '외부 출처의 상태 정보가 충분하지 않거나 서로 일치하지 않아 추가 확인이 필요합니다.')}</p>
                 <div className="ko-code-footer">
                   <span>출처 확인일: {item.lastChecked.replaceAll('-', '.')}</span>
                   <CopyCodeButton code={item.code} />
