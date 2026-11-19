@@ -7,6 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     '',
     '/codes/',
+    '/ko/akayuki-codes/',
     '/code-checker/',
     '/guides/',
     '/guides/how-to-redeem/',
