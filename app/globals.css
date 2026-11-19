@@ -620,3 +620,52 @@ button,input,select,textarea{font:inherit}
 
 /* Consistent typography: one readable sans-serif family, monospace only for code */
 code,pre,.checker-result h3{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+
+
+/* Sticky header and homepage brand alignment */
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  width:100%;
+  box-shadow:0 1px 5px rgba(15,23,42,.08);
+}
+.site-header .nav-wrap{
+  display:flex;
+  align-items:center;
+}
+.brand{
+  display:inline-flex;
+  align-items:center;
+  justify-content:flex-start;
+  gap:8px;
+  line-height:1;
+  white-space:nowrap;
+}
+.brand-mark{
+  flex:0 0 auto;
+  display:grid;
+  place-items:center;
+}
+.brand>span:last-child{
+  display:inline-flex;
+  align-items:center;
+  line-height:1;
+}
+body:has(.approved-hero) .site-header .container{
+  width:min(1160px,calc(100% - 64px));
+}
+@media(max-width:900px){
+  body:has(.approved-hero) .site-header .container{
+    width:calc(100% - 40px);
+  }
+}
+@media(max-width:700px){
+  .site-header{
+    position:sticky;
+    top:0;
+  }
+  body:has(.approved-hero) .site-header .container{
+    width:calc(100% - 28px);
+  }
+}
