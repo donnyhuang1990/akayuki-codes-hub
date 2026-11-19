@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { codes } from '@/lib/codes';
-import { ROBLOX_GAME_URL } from '@/lib/site';
 
 export default function Home() {
   const featured = codes.slice(0, 3);
