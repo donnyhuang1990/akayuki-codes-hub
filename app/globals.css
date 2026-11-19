@@ -446,3 +446,10 @@ body{background:#fff;color:var(--site-ink);font-family:Arial,Helvetica,sans-seri
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid rgba(237,48,56,.55);outline-offset:3px}
 @media(max-width:800px){.site-header nav{gap:13px}.tool-controls{grid-template-columns:minmax(0,1fr) 170px}.tool-controls .button{grid-column:1/-1;justify-self:start}}
 @media(max-width:700px){.site-header{height:54px}.site-header nav{display:none}.page-wrap,.article-wrap{width:calc(100% - 28px);padding-top:30px;padding-bottom:60px}.page-title{font-size:clamp(32px,9vw,42px)}.page-intro{font-size:15px}.codes-summary{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.codes-summary>div{padding:12px}.codes-summary strong{font-size:22px}.codes-howto,.guides-tools-panel{align-items:flex-start;flex-direction:column}.codes-section-heading,.code-tool-heading{align-items:flex-start;flex-direction:column}.tool-controls{grid-template-columns:1fr}.tool-controls .button{grid-column:auto}.code-row{align-items:flex-start;flex-direction:column;gap:12px;padding:15px}.code-actions{width:100%;justify-content:space-between}.codes-bottom-links,.guide-catalog{grid-template-columns:1fr}.catalog-card{padding:17px}.checker-card{padding:16px}.input-action{grid-template-columns:1fr}.checker-next-links{align-items:flex-start;flex-direction:column}.article-body{margin-top:20px}.article-body p,.article-body li{font-size:14px}.article-body table{display:block;overflow-x:auto;white-space:nowrap}.article-cta-links,.guides-tools-links{align-items:flex-start;flex-direction:column}.approved-footer-grid{grid-template-columns:1fr 1fr;gap:14px}.approved-footer-note{grid-column:1/-1;border-left:0;padding-left:0}}
+
+/* Preserve the approved compact homepage header while inner pages use the full navigation scale */
+body:has(.approved-hero) .site-header{height:42px}
+body:has(.approved-hero) .site-header .container{width:min(928px,calc(100% - 36px))}
+body:has(.approved-hero) .site-header nav{gap:25px;font-size:10px}
+body:has(.approved-hero) .site-header .language-link{display:none}
+body:has(.approved-hero) .site-header .nav-cta{font-size:10px;padding:7px 13px}
